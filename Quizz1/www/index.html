@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+        <link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+        <script src="jquery.js"></script>
+    	<script src="jquery.mobile-1.4.5.js"></script>
+    	<style>
+    	 #homepage{
+			/*background:url("background.jpg");*/
+			background-color: black;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+        }
+        #homepage1 p{
+        	color:white;
+        }
+
+
+        #play {
+        	background-color: green;
+        	color:white;
+
+        }
+
+        #instruction{
+        	background-color:blue;
+        	color:white;
+        }
+
+        #quizz{
+			/*background:url("background.jpg");*/
+			background-color: black;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+        }
+        #quizz1 p{
+        	color:white;
+        }
+
+
+        #help{
+			/*background:url("background.jpg");*/
+			background-color: black;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+        }
+        #help1 p{
+        	color:white;
+        }
+
+
+        #help2 {
+        	background-color: blue;
+        	color:white;
+
+        }
+    	</style>
+
+
+    </head>
+
+    <body>
+
+    	
+    	
+        <script type="text/javascript" src="cordova.js"></script>
+
+
+     <!-- homepage section -->
+	<div data-role="page" id="homepage">
+        <div data-role="header">
+            <h1>Quizz</h1>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#homepage" class="ui-btn-active ui-state-persist" data-icon="home">Home</a></li>
+                <li><a href="#quizz" data-icon="grid">Quizz</a></li>
+                <li><a href="#help" data-icon="info">Help</a></li>
+            </ul>
+        </div>
+
+        <div data-role="main" id="homepage1" class="ui-content">
+            <p>This is a quizz application</p>
+            <br>
+            <a href="#quizz" class="ui-btn" id="play">PlAY</a>
+ 			<a href="#help" class="ui-btn" id="instruction">INSTRUCTION</a>
+        </div>
+
+
+        <div data-role="footer">
+        </div>
+    </div>
+
+
+    <!-- quizz section -->
+    <div data-role="page" id="quizz">
+        <div data-role="header">
+            <h1>Quizz</h1>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#homepage" data-icon="home">Home</a></li>
+                <li><a href="#quizz" class="ui-btn-active ui-state-persist" data-icon="grid">PLAY</a></li>
+                <li><a href="#help" data-icon="info">Help</a></li>
+            </ul>
+        </div>
+
+        <div data-role="main" id="quizz1" class="ui-content">
+            <p>This is a quizz application</p>
+        </div>
+
+
+        <div data-role="footer">
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- help section -->
+    <div data-role="page" id="help">
+        <div data-role="header">
+            <h1>Quizz</h1>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#homepage" data-icon="home">Home</a></li>
+                <li><a href="#quizz" data-icon="grid">Quizz</a></li>
+                <li><a href="#help" class="ui-btn-active ui-state-persist" data-icon="info">Help</a></li>
+
+            </ul>
+        </div>
+
+        <div data-role="main" id="help1" class="ui-content">
+            <p>This is the help section and provides basic information about how to use the quizz</p>
+
+            <a href="#dialoginfo" class="ui-btn ui-icon-info ui-btn-icon-left" id="help2">More Info</a>
+
+        </div>
+
+
+        
+
+        <div data-role="footer">
+        </div>
+
+        
+
+    </div>
+
+    <div data-role="page" data-dialog="true" id="dialoginfo">
+        <div data-role="header" >
+            <h1>More Info</h1>
+        </div>
+
+        <div data-role="main" id="info" class="ui-content">
+            <p>You have requested more information about the App!</p>
+        </div>
+
+        <a href="#help" class="ui-btn ui-btn ui-icon-back ui-btn-icon-left" data-rel="back">Dismiss</a>
+
+    </div>
+
+    </body>
+</html>
